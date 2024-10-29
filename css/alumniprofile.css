@@ -1,0 +1,121 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #347928;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 90%;
+  width: 550px;
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+  background: #f5f9f5;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  object-fit: cover;
+  border: 2px solid #347928;
+}
+
+.profile-content {
+  margin-top: 20px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-form label {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.profile-form input,
+input[type="password"],
+select {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="password"] {
+  width: 96%;
+}
+
+p strong {
+  color: #347928;
+}
+
+.button {
+  background-color: #347928;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #185519;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #347928;
+  border-bottom: 2px solid #e7e7e7;
+  padding-bottom: 5px;
+}
+
+a {
+  color: #347928;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #185519;
+}
+
+.alumni-studID {
+  color: #347928;
+  font-weight: bold;
+}
+
+/* Responsive Style */
+@media (max-width: 600px) {
+  .profile-picture {
+    width: 120px;
+    height: 145px;
+  }
+
+  .profile-form input,
+  button {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

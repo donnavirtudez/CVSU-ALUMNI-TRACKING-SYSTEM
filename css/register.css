@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f9f5;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: stretch;
+  padding: 20px;
+}
+
+.left-div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #185519, #347928);
+  color: white;
+  border-radius: 10px 0 0 10px;
+  padding: 40px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.schoolname {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.right-div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: white;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.alumni {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #347928;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #347928;
+  outline: none;
+}
+
+button {
+  padding: 13px 20px;
+  background-color: #347928;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #185519;
+  transform: translateY(-2px);
+}
+
+a {
+  margin: auto 0;
+  text-decoration: none;
+  color: #347928;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #185519;
+}
+
+p {
+  color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 1400px) {
+  .alumni {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  select {
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px 18px;
+  }
+
+  .p-a {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1300px) {
+  .alumni {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  select {
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px 18px;
+  }
+
+  .p-a {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .schoolname {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-div,
+  .right-div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .alumni {
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  select {
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px 18px;
+  }
+
+  .p-a {
+    text-align: center;
+  }
+}
+
+@media (max-width: 950px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  select {
+    max-width: 100%;
+  }
+
+  .schoolname {
+    font-size: 1.2rem;
+  }
+
+  .alumni {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px 18px;
+  }
+
+  .p-a {
+    text-align: center;
+  }
+}
+
+@media (max-width: 875px) {
+  .schoolname,
+  .alumni {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  select {
+    max-width: 100%;
+  }
+
+  .schoolname {
+    font-size: 1.2rem;
+  }
+
+  .alumni {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px 18px;
+  }
+
+  .p-a {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .schoolname {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  select {
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .schoolname,
+  .alumni {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .left-div,
+  .right-div {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .schoolname {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .schoolname {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .alumni {
+    font-size: 1rem;
+  }
+}
